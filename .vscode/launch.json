@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Task4",
+      "request": "launch",
+      "mainClass": "Task4",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
+      "name": "Assigment",
+      "request": "launch",
+      "mainClass": "Assigment",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "TypeConversion",
       "request": "launch",
       "mainClass": "TypeConversion",
