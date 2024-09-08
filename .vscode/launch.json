@@ -1,0 +1,63 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "TypeConversion",
+      "request": "launch",
+      "mainClass": "TypeConversion",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
+      "name": "Task3",
+      "request": "launch",
+      "mainClass": "Task3",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "FirstProgram",
+      "request": "launch",
+      "mainClass": "FirstProgram",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
+      "name": "Task1",
+      "request": "launch",
+      "mainClass": "Task1",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
+      "name": "Task2",
+      "request": "launch",
+      "mainClass": "Task2",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
+      "name": "UserInput",
+      "request": "launch",
+      "mainClass": "UserInput",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
+      "name": "Variables",
+      "request": "launch",
+      "mainClass": "Variables",
+      "projectName": "Java Learning_69b7d01a"
+    }
+  ]
+}
