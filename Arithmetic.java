@@ -54,6 +54,10 @@ public class Arithmetic {
     public void AddValueToPreviousEnteredValue(){
         InnerArtmetic();
     }
+
+    void Operations() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }
 
 
