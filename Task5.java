@@ -1,4 +1,5 @@
 
+import static java.lang.Math.pow;
 import java.util.Scanner;
 
 public class Task5 {
@@ -7,7 +8,8 @@ public class Task5 {
         // task.Operations();
         // task.Product();
         // task.Perimeter();
-        task.Area();
+        // task.SimpleInterest();
+        task.CompoundInterest();
     }
     
     // ? Program wich takes two numbers and perform arthimetic operations(+,-,*,/)
@@ -98,6 +100,52 @@ public class Task5 {
     public void Area(){
         try {
             AreaOfATriangle();
+        } catch (Exception e) {
+            throw new UnsupportedOperationException("Not supported yet.");
+        }
+    }
+
+    // ? Create a program to calculate Simple Interest
+    private void CalculateSimpleInterest(){
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter Amount: ");
+            float PrincipleAmount = scanner.nextFloat();
+            System.out.print("Enter Rate Percentage: ");
+            float Rate = scanner.nextFloat();
+            System.out.print("Enter Years of Time Period: ");
+            float TimePeriod = scanner.nextFloat();
+            float Interest = (PrincipleAmount * Rate * TimePeriod)/100;
+            System.out.println("Amount of Interest is : " + Interest);
+        }
+    }
+
+    public void SimpleInterest(){
+        try {
+            CalculateSimpleInterest();
+        } catch (Exception e) {
+            throw new UnsupportedOperationException("Not supported yet.");
+        }
+    }
+
+    // ? Create a program to calculate Compound Interest
+    private void CalculateCompoundInterest(){
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter Amount: ");
+            float PrincipleAmount = scanner.nextFloat();
+            System.out.print("Enter Rate Percentage: ");
+            float Rate = scanner.nextFloat();
+            System.out.print("Enter Years of Time Period: ");
+            float TimePeriod = scanner.nextFloat();
+            double Amount = PrincipleAmount * pow((1 + Rate/100), TimePeriod);
+            double CompoundInterest = Amount - PrincipleAmount;
+
+            System.out.println("Amount of Interest is : " + CompoundInterest);
+        }
+    }
+
+    public void CompoundInterest(){
+        try {
+            CalculateCompoundInterest();
         } catch (Exception e) {
             throw new UnsupportedOperationException("Not supported yet.");
         }
