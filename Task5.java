@@ -9,7 +9,8 @@ public class Task5 {
         // task.Product();
         // task.Perimeter();
         // task.SimpleInterest();
-        task.CompoundInterest();
+        // task.CompoundInterest();
+        task.Converter();
     }
     
     // ? Program wich takes two numbers and perform arthimetic operations(+,-,*,/)
@@ -146,6 +147,24 @@ public class Task5 {
     public void CompoundInterest(){
         try {
             CalculateCompoundInterest();
+        } catch (Exception e) {
+            throw new UnsupportedOperationException("Not supported yet.");
+        }
+    }
+
+    // ? Create a program to convert Fahrenheit to Celsius
+    private void FahrenheitToCelsiusConverter(){
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter Fahrenheit Temperature : ");
+            float Fahrenheit = scanner.nextFloat();
+            double Celsius = (Fahrenheit - 32) * 5/9;
+            System.out.println("Temperature in Celsisus is : " + Celsius);
+        }
+    }
+
+    public void Converter(){
+        try {
+            FahrenheitToCelsiusConverter();
         } catch (Exception e) {
             throw new UnsupportedOperationException("Not supported yet.");
         }
