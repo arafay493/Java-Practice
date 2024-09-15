@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Loops",
+      "request": "launch",
+      "mainClass": "Loops",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "Task6",
       "request": "launch",
       "mainClass": "Task6",
