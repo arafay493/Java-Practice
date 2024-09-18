@@ -11,7 +11,10 @@ public class Task7 {
    // task.LCM();
    // task.GCD();
    // task.PrimeNumberCheck();
-   task.reverse();
+   // task.reverse();
+   // task.fibonacci();
+   // task.Armstrong();
+   task.Palindrom();
  }
 
  //? Create a Multiplication table of given number 
@@ -211,4 +214,84 @@ public class Task7 {
    public void reverse(){
       reverseNumber();
    }
+   
+   //? Create a Program to print fibonacci series upto certain number. 
+   private void fibonacciSeries(){
+      try (Scanner scanner = new Scanner(System.in)) {
+         System.out.print("Enter the limit for Fibonacci series: ");
+         int limit = scanner.nextInt();
+         limit = Math.abs(limit);
+         int num1 = 0; 
+         int num2 = 1;
+         int nextNum;
+         System.out.print("Fibonacci Series: " + num1 + ", " + num2);
+         while ((nextNum = num1 + num2) <= limit) {
+            System.out.print("," + nextNum);
+            num1 = num2;
+            num2 = nextNum;
+        }
+      }
+   }
+
+   public void fibonacci(){
+      fibonacciSeries();
+   }
+   
+   //? Create a Program to check if the number is Armstrong Number or not. 
+   private void ArmstrongNumber(){
+      try (Scanner scanner = new Scanner(System.in)) {
+         System.out.print("Enter Number: ");
+         int number = scanner.nextInt();
+         int storedNumber = number;
+         int sum = 0;
+         int noOfdigits = String.valueOf(number).length();  // Get the number of digits
+         while (number > 0) {
+            int digit = number % 10;
+            sum += Math.pow(digit, noOfdigits);
+            number /= 10;
+ 
+        }
+
+         // Check if the number is an Armstrong number
+        if (storedNumber == sum) {
+            System.out.println("Given Number is an Armstrong number.");
+        } else {
+            System.out.println("Given Number is not an Armstrong number.");
+        }
+      }
+   }
+
+   public void Armstrong(){
+      ArmstrongNumber();
+   }
+
+      
+   //? Create a Program the given number is palindrom or not. 
+   private void palindromNumber(){
+      try (Scanner scanner = new Scanner(System.in)) {
+         System.out.print("Enter Number you want reverse : ");
+         int num = scanner.nextInt();
+         num = Math.abs(num);
+         int storedNum = num;
+         int rev = 0;
+         while (num > 0) {
+            int digit = num % 10;  // Get the last digit
+            rev = rev * 10 + digit; // Append the digit to the reversed number
+            num /= 10;              // Remove the last digit from the number
+        }
+
+        // Check if the number is a Palindrom number
+        if (storedNum == rev) {
+         System.out.println("Given Number is a Palindrom number.");
+        } else {
+            System.out.println("Given Number is not a Palindrom number.");
+        }
+      }
+   }
+
+   public void Palindrom(){
+      palindromNumber();
+   }
+
+   
 }
