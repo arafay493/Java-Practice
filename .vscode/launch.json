@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Arrays",
+      "request": "launch",
+      "mainClass": "Arrays",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "Task7",
       "request": "launch",
       "mainClass": "Task7",
