@@ -11,7 +11,8 @@ public class Task8 {
         // task.sorted();
         // task.deleteElement();
         // task.reverse();
-        task.palindrom();
+        // task.palindrom();
+        task.merge();
     }
 
     // ? Create a program that calculates the sum and average of an ArrayList
@@ -174,5 +175,44 @@ public class Task8 {
 
     public void palindrom(){
         CheckPalindromArray();
+    }
+
+    // ? Create a program that merge two sorted array.
+    private void MergeSortedArray(){
+        int[] arr1 = {1, 3, 5, 7, 9};
+        int[] arr2 = {2, 4, 6, 8, 10};
+        int[] arr3 = new int[arr1.length + arr2.length];
+        int index1 = 0;
+        int index2 = 0;
+        int index3 = 0;
+        while(index1 < arr1.length && index2 < arr2.length){
+            if(arr1[index1] < arr2[index2]){
+                arr3[index3] = arr1[index1];
+                index1++;
+            }
+            else{
+                arr3[index3] = arr2[index2];
+                index2++;
+            }
+            index3++;
+        }
+        // Copy remaining elements from arr1 (if any)
+        while (index1 < arr1.length) {
+            arr3[index3] = arr1[index1];
+            index1++;
+            index3++;
+        }
+
+        // Copy remaining elements from arr2 (if any)
+        while (index2 < arr2.length) {
+            arr3[index3] = arr2[index2];
+            index2++;
+            index3++;
+        }
+        System.out.println(Arrays.toString(arr3));
+    }
+
+    public void merge(){
+        MergeSortedArray();
     }
 }
