@@ -18,7 +18,9 @@ public class Driver {
     //     System.out.println(car.getCurrentFuelLevel());
     // }
     public static void main(String[] args) {
-        Car swift = new Car();
+        // Car swift = new Car();
+        Car swift = new Car("Red");
+        Car thar = new Car();
         swift.addFuel(6);
         // swift.Start();
         // swift.drive();
@@ -29,6 +31,8 @@ public class Driver {
         Driver driver = new Driver();
         driver.name = "John Doe";
         driver.dateOfLicense = "123456789";
+        System.out.println(swift.color);
+        System.out.println(thar.color);
         System.out.println(minAgeForDriving);
     }
 }

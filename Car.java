@@ -5,6 +5,37 @@ public class Car {
     float currentFuelInLiters;
     int noOfSeats;
 
+    // //? It is constructor with default values
+    // Car(){
+    //     noOfWheels = 4;
+    //     color = "Blue";
+    //     maxSpeed = 250.0f;
+    //     currentFuelInLiters = 10.0f;
+    //     noOfSeats = 5;
+    // }
+
+    //? It is constructor with parametric values
+    Car(String color){
+        noOfWheels = 4;
+        this.color = color;
+        maxSpeed = 250.0f;
+        currentFuelInLiters = 10.0f;
+        noOfSeats = 5;
+    }
+
+    //? It is constructor with parametric values
+    // Car(){
+    //     noOfWheels = 4;
+    //     this.color = "Black";
+    //     maxSpeed = 250.0f;
+    //     currentFuelInLiters = 10.0f;
+    //     noOfSeats = 5;
+    // }
+    Car(){
+        this("Black");
+        currentFuelInLiters = 5.0f;
+    }
+
     // public void Start(){
     //     if(currentFuelInLiters==0){
     //         System.out.println("Car is out of fuel");
