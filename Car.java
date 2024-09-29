@@ -1,9 +1,20 @@
 public class Car {
+    static int noOfCarsSold;
     int noOfWheels;
     String color;
     float maxSpeed;
     float currentFuelInLiters;
     int noOfSeats;
+
+    //? Code Block
+    static {
+        noOfCarsSold = 0;
+        System.out.println("I am in static Block");
+    }
+    {
+        noOfCarsSold++;
+        System.out.println("I am in normal Block");
+    }
 
     // //? It is constructor with default values
     // Car(){
