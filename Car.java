@@ -34,7 +34,7 @@ public class Car {
         noOfSeats = 5;
     }
 
-    //? It is constructor with parametric values
+    //? It is constructor without parametric values
     // Car(){
     //     noOfWheels = 4;
     //     this.color = "Black";
