@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Task10",
+      "request": "launch",
+      "mainClass": "Task10",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "SwitchCase",
       "request": "launch",
       "mainClass": "SwitchCase",
