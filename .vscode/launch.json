@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SwitchCase",
+      "request": "launch",
+      "mainClass": "SwitchCase",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "TernaryOperator",
       "request": "launch",
       "mainClass": "TernaryOperator",
