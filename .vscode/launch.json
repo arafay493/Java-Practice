@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TernaryOperator",
+      "request": "launch",
+      "mainClass": "TernaryOperator",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "Task8",
       "request": "launch",
       "mainClass": "Task8",
