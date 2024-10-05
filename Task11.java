@@ -7,7 +7,8 @@ public class Task11 {
         Task11 task = new Task11();
         // task.Checker();
         // task.Guess();
-        task.Table();
+        // task.Table();
+        task.PrimeNumber();
     }
 
     //! Create a program to using do While loop to find password checker until a valid password is entered.
@@ -125,5 +126,33 @@ public class Task11 {
 
     public void Table(){
         MultiplicationTable();
+    }
+
+    //! Create a program to check the number is prime or not.
+    private static void CheckPrimeNumber() {
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter Number ");
+            int num = scanner.nextInt();
+            boolean isPrime = true;
+            int i = 2;
+            switch (num) {
+                case 0, 1 -> isPrime = false;
+                case 2 -> isPrime = true;
+                default -> {
+                    do {
+                        if(num % i == 0){
+                            isPrime = false;
+                        }
+                        i++;
+                    } while (i < num);
+                }
+            }
+            String result  = isPrime? "Prime number" : "Not a prime number";
+            System.out.println(result);
+        }
+    }
+
+    public void PrimeNumber(){
+        CheckPrimeNumber();
     }
 }
