@@ -6,7 +6,8 @@ public class Task11 {
     public static void main(String[] args) {
         Task11 task = new Task11();
         // task.Checker();
-        task.Guess();
+        // task.Guess();
+        task.Table();
     }
 
     //! Create a program to using do While loop to find password checker until a valid password is entered.
@@ -104,5 +105,25 @@ public class Task11 {
 
     public void Guess(){
         GuessNumber();
+    }
+
+    //! Create a program to using do While loop to print multiplication table.
+    private static void MultiplicationTable() {
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter Number to print multiplication table ");
+            int num = scanner.nextInt();
+            System.out.print("Enter Number of times to print multiplication table ");
+            int times = scanner.nextInt();
+            int i = 1;
+            do {
+                System.out.println(num + " x " + i + " = " + num * i);
+                i++;
+            } while (i <= times);
+        }
+    }
+    
+
+    public void Table(){
+        MultiplicationTable();
     }
 }
