@@ -8,7 +8,8 @@ public class Task11 {
         // task.Checker();
         // task.Guess();
         // task.Table();
-        task.PrimeNumber();
+        // task.PrimeNumber();
+        task.MaxNumber();
     }
 
     //! Create a program to using do While loop to find password checker until a valid password is entered.
@@ -154,5 +155,23 @@ public class Task11 {
 
     public void PrimeNumber(){
         CheckPrimeNumber();
+    }
+
+    //! Create a program to find the max number with For Each in an integer array.
+    private static void FindMaxNumber() {
+        int num[] = {1, 5, 9, 2, 3, 7, 8};
+        int maxNumber = num[0];
+    
+        for (int i : num) {
+            if (i > maxNumber) { // Compare the value directly
+                maxNumber = i;
+            }
+        }
+    
+        System.out.println("Max number: " + maxNumber);
+    }
+    
+    public void MaxNumber(){
+        FindMaxNumber();
     }
 }
