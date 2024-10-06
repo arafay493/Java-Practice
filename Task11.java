@@ -9,7 +9,10 @@ public class Task11 {
         // task.Guess();
         // task.Table();
         // task.PrimeNumber();
-        task.MaxNumber();
+        // task.MaxNumber();
+        // task.Occurance();
+        // task.ExitOnExitText();
+        task.SumOfEveryPositiveNumber();
     }
 
     //! Create a program to using do While loop to find password checker until a valid password is entered.
@@ -173,5 +176,65 @@ public class Task11 {
     
     public void MaxNumber(){
         FindMaxNumber();
+    }
+
+    //! Create a program to find the occurance of a specific number with For Each in an integer array.
+    private static void OccuranceOfNumber() {
+        int num[] = {1, 5, 9 , 2, 3, 7, 8 , 9 , 5 ,8};
+        int sampleNumber  = 8;
+        int occurance = 0;
+    
+        for (int i : num) {
+            if (sampleNumber == num[i]) { // Compare the value directly
+                occurance++;
+            }
+        }
+    
+        System.out.println();
+        System.out.println("Occurance of a specific number: " + occurance);
+    }
+    
+    public void Occurance(){
+        OccuranceOfNumber();
+    }
+
+    //! Create a program to ReadInputInLoopAndExitOnExitText.
+    private static void ReadInputInLoopAndExitOnExitText() {
+        try (Scanner scanner = new Scanner(System.in)) {
+            do {
+                System.out.print("Enter Text: ");
+                String text = scanner.nextLine();
+                if (text.equalsIgnoreCase("exit")) {
+                    System.out.println("Exiting...");
+                    break;
+                }
+            } while (true);
+        }
+    }
+    
+    public void ExitOnExitText(){
+        ReadInputInLoopAndExitOnExitText();
+    }
+
+    //! Create a program that create a sum of every positive number and skiping a negative number.
+    private static void SumOfEveryPositiveNumberSkipingNegative() {
+        int i = 0;
+        int sum = 0;
+        try (Scanner scanner = new Scanner(System.in)) {
+            do {
+                System.out.print("Enter Number: ");
+                int num = scanner.nextInt();
+                if (num < 0) {
+                    continue;
+                }
+                sum += num;
+                i++;
+            } while (i < 3);
+        }
+        System.out.println("Sum of every positive number (excluding negative numbers): " + sum);
+    }
+    
+    public void SumOfEveryPositiveNumber(){
+        SumOfEveryPositiveNumberSkipingNegative();
     }
 }
