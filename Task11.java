@@ -12,7 +12,8 @@ public class Task11 {
         // task.MaxNumber();
         // task.Occurance();
         // task.ExitOnExitText();
-        task.SumOfEveryPositiveNumber();
+        // task.SumOfEveryPositiveNumber();
+        task.PrintEven();
     }
 
     //! Create a program to using do While loop to find password checker until a valid password is entered.
@@ -236,5 +237,23 @@ public class Task11 {
     
     public void SumOfEveryPositiveNumber(){
         SumOfEveryPositiveNumberSkipingNegative();
+    }
+
+    //! Create a program that print only even number skiping odd number using continue statement.
+    private static void PrintOnlyEvenNumbers() {
+        int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
+        int i = 0;
+        do {
+            if (arr[i] % 2 != 0) {
+                i++;
+                continue;
+            }
+            System.out.println("Even Number: " + arr[i]);
+            i++;
+        } while (i < arr.length);
+    }
+    
+    public void PrintEven(){
+        PrintOnlyEvenNumbers();
     }
 }
