@@ -13,7 +13,8 @@ public class Task11 {
         // task.Occurance();
         // task.ExitOnExitText();
         // task.SumOfEveryPositiveNumber();
-        task.PrintEven();
+        // task.PrintEven();
+        task.Fibonacci();
     }
 
     //! Create a program to using do While loop to find password checker until a valid password is entered.
@@ -255,5 +256,34 @@ public class Task11 {
     
     public void PrintEven(){
         PrintOnlyEvenNumbers();
+    }
+
+    //! Create a program that print fibonachi series using recursion(0 , 1 , 1 , 2 , 3 , 5 , 8 , 13 .....).
+    private static void FibonacciSeries() {
+        //todo: Normal Method
+        // int a = 0, b = 1, c;
+        // System.out.print("Fibonacci Series: " + a + " " + b);
+        // for (int i = 2; i < 10; i++) {
+        //     c = a + b;
+        //     System.out.print(" " + c);
+        //     a = b;
+        //     b = c;
+        // }
+        //todo: Recursion Method
+        int a = 0, b = 1, limit = 10;
+        System.out.print("Fibonacci Series: " + a + " " + b);
+        fibonachi(a, b, limit);
+    }
+    static void fibonachi(int num1 , int num2, int limit) {
+        if (limit == 0) {
+            return;
+        }
+        int sum = num1 + num2;
+        System.out.print(" " + sum);
+        fibonachi(num2 , sum , limit - 1);
+    }
+    
+    public void Fibonacci(){
+        FibonacciSeries();
     }
 }
