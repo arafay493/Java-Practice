@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MathMethods",
+      "request": "launch",
+      "mainClass": "MathMethods",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "Task11",
       "request": "launch",
       "mainClass": "Task11",
