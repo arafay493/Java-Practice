@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Task12",
+      "request": "launch",
+      "mainClass": "Task12",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "Vehicle",
       "request": "launch",
       "mainClass": "Vehicle",
