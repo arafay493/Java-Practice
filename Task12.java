@@ -7,7 +7,8 @@ public class Task12 {
         // task.Concatenate();
         // task.AreaOfCircumference();
         // task.Dice();
-        task.NumberGuessingGame();
+        // task.NumberGuessingGame();
+        task.ConcatenateUsingStringBuilder();
     }
     
     //? Take two strings, concatenate them and convert the result to uppercase.
@@ -50,5 +51,16 @@ public class Task12 {
                 System.out.println("Sorry, the correct number was " + randomNumber + ".");
             }
         }
+    }
+
+    //? Take an Array of words to concatenate them into a single string using stringBuilder.
+    private void ConcatenateUsingStringBuilder(){
+        String[] words = {"Hello", "World", "Java"};
+        StringBuilder sb = new StringBuilder();
+        for (String word : words) {
+            sb.append(word).append(" ");
+        }
+        String concatenatedString = sb.toString().trim();
+        System.out.println("Concatenated String: " + concatenatedString);
     }
 }
