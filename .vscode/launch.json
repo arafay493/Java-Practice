@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "GetterSetterTest",
+      "request": "launch",
+      "mainClass": "gettersAndSetters.folder2.GetterSetterTest",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "AccessTest",
       "request": "launch",
       "mainClass": "packagesAndImports.AccessTest",
