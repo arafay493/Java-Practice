@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AccessTest",
+      "request": "launch",
+      "mainClass": "packagesAndImports.AccessTest",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
+      "name": "Car",
+      "request": "launch",
+      "mainClass": "packagesAndImports.folder1.Car",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
+      "name": "AccessTest",
+      "request": "launch",
+      "mainClass": "packagesAndImports.folder1.AccessTest",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "Task12",
       "request": "launch",
       "mainClass": "Task12",
