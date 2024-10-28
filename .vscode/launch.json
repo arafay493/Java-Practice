@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Calculator",
+      "request": "launch",
+      "mainClass": "com.example.utils.Calculator",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "GetterSetterTest",
       "request": "launch",
       "mainClass": "gettersAndSetters.folder2.GetterSetterTest",
