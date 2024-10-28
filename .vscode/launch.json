@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Transaction",
+      "request": "launch",
+      "mainClass": "com.example.utils.Transaction",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "Calculator",
       "request": "launch",
       "mainClass": "com.example.utils.Calculator",
