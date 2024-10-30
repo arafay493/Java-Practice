@@ -1,8 +1,11 @@
 package Inheritance.InheritanceTest;
 
-import Inheritance.publicInheritance.MotorCycle.MotorCycle;
-import Inheritance.publicInheritance.TwoWheeler.TwoWheeler;
-import Inheritance.publicInheritance.vehicle.Vehicle;
+// import Inheritance.publicInheritance.MotorCycle.MotorCycle;
+// import Inheritance.publicInheritance.TwoWheeler.TwoWheeler;
+// import Inheritance.publicInheritance.vehicle.Vehicle;
+import Inheritance.privateInheritance.MotorCycle.MotorCycle;
+import Inheritance.privateInheritance.TwoWheeler.TwoWheeler;
+import Inheritance.privateInheritance.vehicle.Vehicle;
 
 public class InheritanceTest {
 
