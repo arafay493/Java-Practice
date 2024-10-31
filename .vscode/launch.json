@@ -8,6 +8,13 @@
       "type": "java",
       "name": "InheritanceTest",
       "request": "launch",
+      "mainClass": "objectClass.InheritanceTest.InheritanceTest",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
+      "name": "InheritanceTest",
+      "request": "launch",
       "mainClass": "Inheritance.InheritanceTest.InheritanceTest",
       "projectName": "Java Learning_69b7d01a"
     },
