@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "EqualsAndHashCodesTest",
+      "request": "launch",
+      "mainClass": "Equals.EqualsAndHashCodesTest",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "InheritanceTest",
       "request": "launch",
       "mainClass": "objectClass.InheritanceTest.InheritanceTest",
