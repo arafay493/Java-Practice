@@ -62,6 +62,15 @@ public class Person {
         // return person.name.equals(name) && person.age == age && person.id.equals(id);
     }
 
+    // hashCode method
+    // @Override
+    // public int hashCode() {
+    //     return Objects.hash(name, age, id);
+    //     // return Objects.hash(name, age);
+    //     // return Objects.hash(name);
+    //     // return 0;
+    // }
+
     @Override
     public String toString() {
         return "Person{"
