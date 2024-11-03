@@ -11,6 +11,8 @@ public class EqualsAndHashCodesTest {
         // }else{
         //     System.out.println("Both person1 and person2 are not the same object");
         // }
+        // System.out.println(person1.getClass());
+        // System.out.println(person2.getClass());
         if (person1.equals(person2)) {
             System.out.println("Both person1 and person2 are the same object");
         } else {

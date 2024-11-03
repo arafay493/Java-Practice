@@ -40,18 +40,26 @@ public class Person {
 
     @Override
     public boolean equals(Object o) {
-        // if (this == o) {
-        //     return true;
-        // }
-        // if (o == null || getClass() != o.getClass()) {
+        // return this == o || (o instanceof Person);
+        if (this == o) {
+            return true;
+        } else if (!(o instanceof Person)) {
+            return false;
+        } else if (getClass() != o.getClass()) {
+            return false;
+        } else if (getClass() == o.getClass()) {
+            Person person = (Person) o;
+            return person.name.equals(name) && person.age == age && person.id.equals(id);
+            // return true;
+        }
+        return false;
+
+        // return super.equals(o); 
+        // if (!(o instanceof Person)) {
         //     return false;
         // }
-        // return super.equals(o); 
-        if (!(o instanceof Person)) {
-            return false;
-        }
-        Person person = (Person) o;
-        return person.name.equals(name) && person.age == age && person.id.equals(id);
+        // Person person = (Person) o;
+        // return person.name.equals(name) && person.age == age && person.id.equals(id);
     }
 
     @Override
