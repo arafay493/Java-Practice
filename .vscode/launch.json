@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TestAbstraction",
+      "request": "launch",
+      "mainClass": "abstraction.TestAbstraction",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "TestArray",
       "request": "launch",
       "mainClass": "Challenge14.problem3.TestArray",
