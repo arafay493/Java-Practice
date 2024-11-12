@@ -2,6 +2,9 @@ package abstraction;
 
 public abstract class Vehicle {
     private int noOfTires;
+
+    // abstract method
+    public abstract void makeStartSound();
     
     //Constructor
     public Vehicle(int noOfTires) {
