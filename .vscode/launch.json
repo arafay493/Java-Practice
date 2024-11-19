@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Test",
+      "request": "launch",
+      "mainClass": "Challenge15.Test",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
       "name": "TestAbstraction",
       "request": "launch",
       "mainClass": "Interface.TestAbstraction",
