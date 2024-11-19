@@ -8,6 +8,13 @@
       "type": "java",
       "name": "TestAbstraction",
       "request": "launch",
+      "mainClass": "Interface.TestAbstraction",
+      "projectName": "Java Learning_69b7d01a"
+    },
+    {
+      "type": "java",
+      "name": "TestAbstraction",
+      "request": "launch",
       "mainClass": "abstraction.TestAbstraction",
       "projectName": "Java Learning_69b7d01a"
     },
